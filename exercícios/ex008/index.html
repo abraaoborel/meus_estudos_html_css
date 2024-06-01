@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: rgb(237, 182, 100);
+        }
+    </style>
 </head>
 <body>
     <h1>Principais formatações</h1>
     <h2>Negrito / Destaque</h2>
     <hr>
+    
     <h3>Negrito:</h3>
     <!-- 
         Existem 2 maneiras de colocarmos negrito, uma maneira não semântica e uma maneira semântica
@@ -19,11 +25,40 @@
     <p>Visualmente parece ser tudo igual, mas a frase em negrito usando a TAG b só tem uma formatação de forma. Só tem sentido de forma. <br>
     O strong dá além da forma em negrito um sentido semântico, porque eu coloquei em negrito? Porque nessa frase esse <strong>termo em destaque</strong> é forte, ele é de destaque, ele é strong.</p>
     <hr>
+
     <h3>Itálico:</h3>
     <p>Nesta frase temos um <i>termo em itálico</i> usando a TAG i (não semântica).</p>
     <p>Nesta frase, temos um <em>termo em ênfase</em> usando a TAG em (semântica).</p>
     <p>Visualmente você vê como no exemplo do negrito, ambos estão em itálico, e ambos aparentemente são iguais.</p>
     <p>Mas para o HMTL a TAG semântica ela tem um significado!</p>
     <p>Evite usar TAGs não semânticas</p>
+    <hr>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a TAG mark (Na verdade eu tive que escrever manualmente &lt;mark&gt; e depois o VScode completou o restante dessa TAG)</p>
+    <p>E no outro parágrafo temos <mark>outro texto marcado</mark> no final.</p>
+    <hr>
+
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.(big) = não semântico. Ou seja não tem significado, o significado é que eu queria ela um pouco maior. E se você quiser isso um pouco maior isso é forma e aí aumentamos nas CSS.
+    <p>Agora por exemplo (small) = semântico, tem por exemplo nos contratos, leia as letras pequenas, elas são "observações importantes" (se fossem importantes estariam MAIOR na minha opnião e a do Guanabara também) mas você consegue dar sentido para letras pequenas, por isso que o (big) ja caiu e o (small) não. <br> (não faz muito sentido pra mim mas ok, vida que segue)
+    <hr>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto excluído</del> para indicar que ele deve ser lido, mas não considerado. TAG (del)</p>
+    <hr>
+
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. TAG (ins)</p>
+    <p>Existe também o <u>sublinhado</u> com a TAG U (não semântica)</p>
+    <hr>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 (usei a TAG sup no número 20)</p>
+    <hr>
+
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas como H<sub>2</sub>O (usei a TAG sub no número 2)</p>
+
 </body>
 </html>
