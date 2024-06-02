@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/abraaoborel" target="_blank" rel="external">repositório público no GitHub</a></p> <!-- Testei sem usar a rel="external" e deu certo também, ao clicar no link, não sobrescreveu a minha pagina, abriu em outra aba no navegador (mas vou deixar o rel="external" só para desencargo de consciência)-->
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/@BorelDev" target="_blank" rel="external"> canal gratuíto no YouTube</a></p> <!-- Fiz um comentário acima mas eu reparei que esse rel="" é para dizer aos mecanismos de busca, como funciona a navegação dentro do meu site, com isso estamos dando uma semântica À esse link, ou seja ele ganha um valor a mais! -->
+    <h2>Usando Links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página.</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias.</a></p> <!-- Target="_self" eu estou dizendo que é para abrir na própria aba, e target="_blank" estou dizendo que é para abrir em uma nova aba-->
+</body>
+</html>
